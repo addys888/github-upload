@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <template if:true= {isTom}>
+            <img src="https://pngimg.com/uploads/tom_and_jerry/tom_and_jerry_PNG13.png" width="200" height="200"/>
+        </template>
+        <template if:true= {isJerry}>
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" width="200" height="200"/>
+        </template>
+        <template if:false= {isJerry}>
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" width="200" height="200"/>
+        </template>
+    </div> 
+    <div class="slds-m-around_small">
+        <lightning-button label="Show Tom Image"
+                          variant="brand"
+                          onclick={showTom}>
+        </lightning-button>&nbsp;&nbsp;
+        <lightning-button label="Show Jerry Image"
+                          variant="brand"
+                          onclick={showJerry}>
+        </lightning-button>
+    </div>
+</template>

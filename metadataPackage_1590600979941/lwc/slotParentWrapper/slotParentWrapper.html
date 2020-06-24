@@ -1,0 +1,11 @@
+<template>
+    <h1> Slot Wrapper Parent Component</h1>
+    <div class="slds-m-around_small">
+        <c-named-slot></c-named-slot>
+    </div>
+    <div class="slds-m-around_small">
+        <slot>
+            <c-un-named-slot></c-un-named-slot>
+        </slot> 
+    </div>
+</template>

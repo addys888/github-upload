@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-m-around_small">
+        <h1> This is Named Slot</h1>
+        <slot name="Name Slot Content Property">
+            <p> Named slot content</p>
+        </slot>
+        <slot name="First Name">
+            <p> 
+                First Name:
+                <lightning-input label="First Name"
+                                value="Test Value">
+                </lightning-input>
+            </p>
+        </slot>
+    </div>
+</template>
